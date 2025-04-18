@@ -65,6 +65,9 @@ importers:
       react-native:
         specifier: 0.79.0
         version: 0.79.0(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)
+      react-native-edge-to-edge:
+        specifier: ^1.6.0
+        version: 1.6.0(react-native@0.79.0(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)
       react-native-gesture-handler:
         specifier: ~2.24.0
         version: 2.24.0(react-native@0.79.0(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)
@@ -77,6 +80,9 @@ importers:
       react-native-screens:
         specifier: ~4.10.0
         version: 4.10.0(react-native@0.79.0(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)
+      react-native-unistyles:
+        specifier: 3.0.0-rc.2
+        version: 3.0.0-rc.2(@react-native/normalize-colors@0.79.0)(react-native-edge-to-edge@1.6.0(react-native@0.79.0(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native-nitro-modules@0.25.2(react-native@0.79.0(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.0(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)
       react-native-web:
         specifier: ~0.20.0
         version: 0.20.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -2953,6 +2959,12 @@ packages:
       react: '*'
       react-native: '*'
 
+  react-native-nitro-modules@0.25.2:
+    resolution: {integrity: sha512-rL+X0LzB8BXvpdrUE/+oZ5v4qS/1nZIq0M8Uctbvqq2q53sVCHX4995ffT8+lGIJe/f0QcBvvrEeXtBPl86iwQ==}
+    peerDependencies:
+      react: '*'
+      react-native: '*'
+
   react-native-reanimated@3.17.4:
     resolution: {integrity: sha512-vmkG/N5KZrexHr4v0rZB7ohPVseGVNaCXjGxoRo+NYKgC9+mIZAkg/QIfy9xxfJ73FfTrryO9iYUrxks3ZfKbA==}
     peerDependencies:
@@ -2971,6 +2983,16 @@ packages:
     peerDependencies:
       react: '*'
       react-native: '*'
+
+  react-native-unistyles@3.0.0-rc.2:
+    resolution: {integrity: sha512-t6wXwvGebMLbwDdpzqBUBPYr625/kvQTb9w28S8a08tUQHpdSKvVIr4DB2YRC6vhhwre0HpAf/H9SnsVfIW7PQ==}
+    engines: {node: '>= 18.0.0'}
+    peerDependencies:
+      '@react-native/normalize-colors': '*'
+      react: '*'
+      react-native: '>=0.76.0'
+      react-native-edge-to-edge: '*'
+      react-native-nitro-modules: '*'
 
   react-native-web@0.20.0:
     resolution: {integrity: sha512-OOSgrw+aON6R3hRosCau/xVxdLzbjEcsLysYedka0ZON4ZZe6n9xgeN9ZkoejhARM36oTlUgHIQqxGutEJ9Wxg==}
@@ -7344,6 +7366,11 @@ snapshots:
       react: 19.0.0
       react-native: 0.79.0(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)
 
+  react-native-nitro-modules@0.25.2(react-native@0.79.0(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0):
+    dependencies:
+      react: 19.0.0
+      react-native: 0.79.0(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)
+
   react-native-reanimated@3.17.4(@babel/core@7.26.10)(react-native@0.79.0(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0):
     dependencies:
       '@babel/core': 7.26.10
@@ -7375,6 +7402,14 @@ snapshots:
       react-freeze: 1.0.4(react@19.0.0)
       react-native: 0.79.0(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)
       warn-once: 0.1.1
+
+  react-native-unistyles@3.0.0-rc.2(@react-native/normalize-colors@0.79.0)(react-native-edge-to-edge@1.6.0(react-native@0.79.0(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native-nitro-modules@0.25.2(react-native@0.79.0(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0))(react-native@0.79.0(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0):
+    dependencies:
+      '@react-native/normalize-colors': 0.79.0
+      react: 19.0.0
+      react-native: 0.79.0(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0)
+      react-native-edge-to-edge: 1.6.0(react-native@0.79.0(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)
+      react-native-nitro-modules: 0.25.2(react-native@0.79.0(@babel/core@7.26.10)(@types/react@19.0.14)(react@19.0.0))(react@19.0.0)
 
   react-native-web@0.20.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
