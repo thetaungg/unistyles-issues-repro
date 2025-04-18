@@ -11,12 +11,9 @@ const styles = StyleSheet.create(theme => ({
             variant: {
                 primary: {
                     color: theme.colors.primary,
-
-                   
                 },
                 secondary: {
                     color: theme.colors.secondary,
-
                 }
             }
         }
