@@ -1,8 +1,9 @@
-import { Text } from "react-native"
-import { StyleSheet } from 'react-native-unistyles'
+import { Button, Text } from "react-native"
+import { StyleSheet, UnistylesRuntime } from 'react-native-unistyles'
 
 const styles = StyleSheet.create(theme => ({
     text: {
+        color: theme.colors.primary,
         _web: {
             fontSize: 50         
         },
@@ -21,11 +22,23 @@ const styles = StyleSheet.create(theme => ({
 }))
 
 const Home = () => {
+    const onChangeTheme = () => {
+        UnistylesRuntime.updateTheme('light', theme => ({
+            ...theme,
+            colors: {
+                ...theme.colors,
+                primary: 'green',
+                secondary: 'blue'
+            }
+        }))
+        console.log(UnistylesRuntime.getTheme())
+    }
     return (
         <>
             <Text style={[styles.text, { fontSize: 12 }]}>
                 My fontSize should be 12
             </Text>
+            <Button title="Change Theme" onPress={onChangeTheme} />
         </>
     )
 }
