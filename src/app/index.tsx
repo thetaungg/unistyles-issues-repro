@@ -36,7 +36,7 @@ const Home = () => {
     return (
         <>
             <Text style={[styles.text, { fontSize: 12 }]}>
-                My fontSize should be 12
+                After updating the theme, my color should be green
             </Text>
             <Button title="Change Theme" onPress={onChangeTheme} />
         </>
